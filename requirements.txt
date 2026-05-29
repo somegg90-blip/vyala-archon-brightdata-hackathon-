@@ -1,0 +1,42 @@
+# ==============================================================================
+# VYALA BRIGHTDATA — Backend Dependencies
+# Python 3.11+
+# ==============================================================================
+
+# ── PARSING ENGINE (From your old setup) ─────────────────────
+tree-sitter==0.23.2
+tree-sitter-python==0.23.6
+tree-sitter-javascript==0.23.1
+tree-sitter-java==0.23.5
+tree-sitter-c-sharp==0.23.1
+tree-sitter-go==0.23.4
+tree-sitter-rust==0.23.2
+tree-sitter-c==0.23.4
+
+# ── DATA MODELING ────────────────────────────────────────────
+pydantic==2.9.2
+pydantic-settings==2.6.1
+
+# ── API SERVER & WEBSOCKETS ──────────────────────────────────
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+python-multipart==0.0.20
+websockets==13.1            # Explicitly adding for the live agent feed
+
+# ── ASYNC / HTTP (Crucial for Bright Data API calls) ────────
+httpx==0.28.1
+anyio==4.7.0
+
+# ── AI CLIENTS ───────────────────────────────────────────────
+openai==1.57.4
+anthropic==0.40.0
+tenacity==9.0.0
+
+# ── CRYPTO ANALYSIS ──────────────────────────────────────────
+cryptography==44.0.0
+
+# ── UTILITIES ────────────────────────────────────────────────
+python-dotenv==1.0.1
+loguru==0.7.3
+pathspec==0.12.1
+orjson==3.10.12
